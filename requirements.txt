@@ -1,0 +1,21 @@
+# Web
+streamlit>=1.28.0
+fastapi>=0.110.0
+uvicorn[standard]>=0.27.0
+httpx>=0.27.0
+python-multipart>=0.0.9
+python-dotenv>=1.0.0
+
+# Auth & crypto
+bcrypt>=4.1.0
+python-jose[cryptography]>=3.3.0
+cryptography>=42.0.0
+email-validator>=2.1.0
+pydantic[email]>=2.6.0
+extra-streamlit-components>=0.1.60
+
+# AI / retrieval (与现有工程一致)
+openai>=1.30.0
+chromadb>=0.4.24
+sentence-transformers>=2.6.0
+numpy>=1.24.0

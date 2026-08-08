@@ -1,0 +1,64 @@
+# ============================================================
+# Git 只上传「真正给别人跑网站用得到」的源码与配置
+# 规则：写在这里的路径 = 不会被 git add / 不会推到 GitHub
+# 检查命令：git status   或   git check-ignore -v 某文件
+# ============================================================
+
+# ---------- 密钥与本地数据（绝对不要上传）----------
+.env
+data/
+*.db
+.streamlit/secrets.toml
+ocr_judge_cache.json
+memory.json
+synonym_cache.json
+chroma_storage/
+
+# ---------- 虚拟环境 ----------
+venv/
+agent/
+.venv/
+
+# ---------- Python 缓存 ----------
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+*.egg-info/
+
+# ---------- IDE ----------
+.idea/
+.vscode/
+*.swp
+
+# ---------- 大型模型（用户自行下载）----------
+all-MiniLM-L6-v2/
+bge-reranker-base/
+
+# ---------- 同步助手二进制 / 压缩包（用百度网盘分发）----------
+socai/bin/
+socai/bin/**
+downloads/
+downloads/**
+*.exe
+*.zip
+xhs-favorites-sync-windows/
+xhs-favorites-sync-windows/**
+
+# ---------- 上游完整工程（仅本机编译用，别人不需要）----------
+socai-main/
+socai/
+
+# ---------- 已弃用的浏览器插件工程（产品不依赖）----------
+xhs-favorites-exporter-main/
+
+# ---------- 个人导出 / 评测数据（含隐私）----------
+final_with_details*.json
+*_2026*.json
+5f16af*.json
+eval_results*.json
+
+# ---------- 系统杂项 ----------
+.DS_Store
+Thumbs.db
+rustup-init.exe
