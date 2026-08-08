@@ -88,7 +88,7 @@ data/
 | 路径 | 说明 |
 |------|------|
 | `.env` | 本地密钥与配置 |
-| `venv/` / `agent/` | Python 虚拟环境（本地创建，勿上传） |
+| `venv/` / `agent/` | Python 虚拟环境 |
 | `ocr_judge_cache.json` | 若走本机 socai OCR 评判流程，可能落在对应缓存目录 |
 | `~/.socai/runs/` | 同步助手拉取时，socai 在用户主目录写下的运行产物（与网站 `data/` 无关） |
 
