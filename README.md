@@ -200,4 +200,4 @@ RERANKER_MODEL_PATH=./bge-reranker-base
 ## 许可证说明
 
 - 网站与同步脚本：本项目代码
-- 同步引擎 `socai.exe`：基于 [socai](https://github.com/socai-io/socai)（Apache-2.0）
+- 同步引擎 `socai.exe`：基于 [socai](https://github.com/socai-io/socai)（Apache-2.0）新增了获取收藏夹内容的功能
